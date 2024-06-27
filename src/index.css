@@ -1,0 +1,442 @@
+.main-content {
+  border: 2px solid rgb(240, 236, 236);
+  padding: 4em 2em;
+  height: 75vh;
+  width: 60%;
+  border-radius: 1em;
+  color: rgb(47, 44, 44);
+  text-align: center;
+  margin: 4em auto;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.main-content img {
+  width: 15rem;
+}
+
+.main-content h1:nth-child(2) {
+  font-size: 1.5em;
+}
+.main-content p {
+  font-size: 1em;
+  font-weight: 600;
+
+  width: 90%;
+  margin: 1em auto 2em auto;
+}
+
+.password-input {
+  position: relative;
+}
+
+.input-field {
+  display: block;
+  margin: 1em auto;
+  width: 85%;
+  height: 3.5em;
+  border-radius: 0.5em;
+  outline: none;
+  border: 2px solid gray;
+  padding: 0 0.5em;
+  font-size: 1em;
+}
+
+.checking-label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 3px;
+}
+.checking-container {
+  border: 2px solid gray;
+  border-radius: 50%;
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+  cursor: pointer;
+}
+
+.checking-container::before {
+  content: '';
+  display: inline-block;
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
+  width: 50%;
+  height: 30%;
+  transform: rotate(310deg);
+  position: relative;
+  top: -1px;
+}
+
+#checking:checked + .checking-container {
+  background: rgb(33, 131, 250);
+  border: 2px solid transparent;
+}
+#checking {
+  visibility: hidden;
+  position: absolute;
+}
+
+.confirm-code::-webkit-outer-spin-button,
+.confirm-code::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-field:focus {
+  appearance: none;
+  border: 2px solid rgb(12, 185, 243);
+}
+
+#see img {
+  width: 100%;
+}
+
+#see {
+  position: relative;
+  top: -45px;
+  left: 93%;
+  display: inline-block;
+  width: 5%;
+  height: 3em;
+  cursor: pointer;
+}
+
+.inactive {
+  width: 95%;
+  height: 3em;
+  border-radius: 0.5em;
+  border-style: none;
+  color: white;
+  background: rgb(33, 131, 250);
+  font-size: 1.1em;
+  opacity: 0.3;
+  cursor: pointer;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  display: block;
+  margin: 2em auto;
+}
+.active {
+  width: 95%;
+  height: 3em;
+  border-radius: 0.5em;
+  border-style: none;
+  color: white;
+  background: rgb(33, 131, 250);
+  font-size: 1.1em;
+  opacity: 1;
+  cursor: pointer;
+  display: block;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  margin: 2em auto;
+}
+
+.active:active {
+  background: rgb(16, 16, 108);
+}
+
+#cancel {
+  width: 96%;
+  height: 4em;
+  border-radius: 2em;
+  border-style: none;
+  font-weight: bolder;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+/* ACCESS FORM STYLE */
+
+.reset-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+#click {
+  margin: 0;
+  border-style: none;
+  background: rgb(33, 131, 250);
+  display: inline-block;
+  color: white;
+  width: 100%;
+  padding-top: 1.8em;
+  padding-bottom: 1.8em;
+  border-radius: 0.5em;
+  transition: 0.2s;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+#click:active {
+  background: rgb(14, 14, 164);
+}
+#click:hover {
+  transform: scale(1.02);
+}
+
+.reset-link input {
+  outline: none;
+  border: 2px solid white;
+  position: relative;
+  top: 200px;
+  color: white;
+}
+.reset-link input::placeholder {
+  color: white;
+}
+
+.location-select-span {
+  display: flex;
+  padding: 2%;
+  margin: 1em 0;
+}
+
+select {
+  display: inline-block;
+  border-radius: 1em;
+  font-weight: bold;
+  width: 15em;
+  height: 4em;
+  outline: none;
+  cursor: pointer;
+}
+select:focus {
+  border: 3px solid blue;
+}
+select::-webkit-scrollbar {
+  display: none;
+}
+select option {
+  display: block;
+  height: 2em;
+}
+
+#continue-link,
+#resend {
+  display: block;
+  border: none;
+  text-decoration: none;
+  background: blue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding: 2em;
+  border-radius: 3em;
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+#continue-link:active,
+#resend:active {
+  background: rgb(5, 5, 114);
+}
+
+/* CONFIRM PHONE STYLING */
+.country-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+.country-number {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  left: -1%;
+}
+.country {
+  width: 30%;
+}
+.number {
+  width: 60%;
+}
+.country-number select {
+  width: 100%;
+  border: 2px solid gray;
+}
+.country-number input {
+  display: block;
+  outline: none;
+  border: 2px solid gray;
+  border-radius: 1em;
+  font-weight: bold;
+  font-size: 1em;
+  height: 3em;
+  width: 100%;
+  text-align: center;
+}
+.country-number select:focus,
+.country-number input:focus {
+  border: 3px solid blue;
+}
+.country-number input::-webkit-outer-spin-button,
+.country-number input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* CODE CONFIRMATION STYLING */
+.code-confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  margin-top: 2em;
+}
+#confirmation-code {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* SUCCESS PAGE STYLING */
+.dashboard-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: blue;
+  color: white;
+  padding: 1.6em 0.5em;
+  border-radius: 2em;
+}
+.dashboard-link:active {
+  background: rgb(33, 33, 192);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1000px) {
+  .main-content h1:first-of-type {
+    font-size: 2em;
+  }
+
+  #see img {
+    width: 100%;
+  }
+
+  #see {
+    position: relative;
+    top: -47px;
+    left: 92%;
+    display: inline-block;
+    width: 7%;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-content {
+    margin-top: 2em;
+  }
+
+  #see img {
+    width: 100%;
+  }
+
+  #see {
+    position: relative;
+    top: -45px;
+    left: 93%;
+    display: inline-block;
+    width: 7%;
+    cursor: pointer;
+  }
+
+  .hideShowDiv {
+    left: 86% !important;
+  }
+}
+/* 
+@media screen and (max-width: 700px) {
+  .forgot_password {
+    border: 2px solid red;
+    width: 90% !important;
+  }
+} */
+
+@media screen and (max-width: 630px) {
+  .main-content {
+    width: 100%;
+    border-style: none;
+    padding: 1em 0;
+  }
+
+  /*  .main-content #logo-image{
+        display: block;
+    } */
+
+  .main-content #logo-image {
+    display: block;
+    width: 3.5em;
+    position: relative;
+    left: -0.6em;
+  }
+
+  #email-box {
+    width: 92%;
+  }
+
+  #see img {
+    width: 100%;
+  }
+
+  #see {
+    position: relative;
+    top: -45px;
+    left: 80%;
+    display: inline-block;
+    width: 7%;
+    cursor: pointer;
+  }
+  /* CONFIRM PHONE STYLING */
+  .country-number {
+    margin: 0;
+  }
+  .country {
+    width: 30%;
+    margin: 0;
+  }
+  .number {
+    width: 60%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-content h1:nth-child(2) {
+    width: 100%;
+    font-size: 2em;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* @media screen and (max-width: 300px) {
+  #see img {
+    width: 100%;
+  }
+
+  #see {
+    position: relative;
+    top: -45px;
+    left: 82%;
+    display: inline-block;
+    width: 10%;
+    cursor: pointer;
+  }
+} */
