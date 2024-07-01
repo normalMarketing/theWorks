@@ -55,7 +55,6 @@ const ChangePassword = () => {
 
   return (
     <div className="ch-passwd main-content">
-      <p style={{ fontSize: '2.1em', margin: '0 auto' }}>Confirm this is you</p>
       <h1 id="verificaton-email">Change your password</h1>
       <p>
         Your password must be at least 6 characters and should include a
